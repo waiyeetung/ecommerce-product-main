@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://waiyeetung.github.io/ecommerce-product-main/)
 
 ## My process
 
