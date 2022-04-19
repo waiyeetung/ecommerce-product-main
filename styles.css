@@ -15,6 +15,8 @@ ul {
 
 .nav-link {
     color: hsl(219, 9%, 45%);
+    margin: 0.5rem 1rem;
+    padding: 0;
 }
 
 .nav-link:hover {
@@ -140,6 +142,7 @@ hr {
 .img-large-div .img-large {
     max-width: 100%;
     object-fit: contain;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -152,6 +155,7 @@ hr {
 .img-large-div, .thumbnails {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .thumbnail {
@@ -284,12 +288,6 @@ hr {
     justify-content: center;
 }
 
-@media (max-width: 767.98px) {
-    .product-desp {
-        padding: 10% 6%;
-    }
-}
-
 .product-desp h4 {
     color: hsl(26, 100%, 55%);
     text-transform: uppercase;
@@ -324,9 +322,10 @@ hr {
       background-color: hsl(25, 100%, 94%);
       width: 48px;
       height: 60%;
-      padding: 3px 2px;
-      border-radius: 15%;
+      padding: 3px 10px;
+      border-radius: 5px;
       text-align: center;
+      margin-right: 10em;
   }
 
 .product-desp h5 {
@@ -334,6 +333,8 @@ hr {
       font-size: 0.8em;
       font-weight: 700;
       text-decoration: line-through;
+      display: flex;
+      align-items: center;
   }
 
 .product-desp .btn-lg {
@@ -369,6 +370,23 @@ hr {
     padding-left: 0;
 }
 
+@media (max-width: 767.98px) {
+    .product-desp {
+        padding: 10% 6%;
+    }
+
+    .price-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-group, .product-desp #add-cart {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+}
 
 /* Cart */
 .nav-cart {
@@ -382,9 +400,9 @@ hr {
     background-color: white;
     width: 370px;
     top: 3.5em;
-    left: -650%;
+    right: -3.5em;
     box-shadow: 0 0 7px hsl(218, 21%, 82%);
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 .cart-head, .cart-body {
